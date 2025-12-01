@@ -7,6 +7,12 @@ import { RoutedUserView } from './component/blog/routed-user-view/routed-user-vi
 import { RoutedAdminEdit } from './component/blog/routed-admin-edit/routed-admin-edit';
 import { RoutedAdminNew } from './component/blog/routed-admin-new/routed-admin-new';
 import { RoutedAdminRemove } from './component/blog/routed-admin-remove/routed-admin-remove';
+import {PallasPlist} from './component/pallas/pallas-plist/pallas-plist'
+import {PallasView} from './component/pallas/pallas-view/pallas-view'
+import {PallasNew} from './component/pallas/pallas-new/pallas-new'
+import {PallasUpdate} from './component/pallas/pallas-update/pallas-update'
+import {PallasRemove} from './component/pallas/pallas-remove/pallas-remove'
+import { PallasHome } from './component/pallas/pallas-home/pallas-home';
 import { AlcaldeRoutedAdminPlist } from './component/alcalde/routed-admin-plist/routed-admin-plist';
 import { AlcaldeRoutedAdminView } from './component/alcalde/routed-admin-view/routed-admin-view';
 import { AlcaldeRoutedAdminNew } from './component/alcalde/routed-admin-new/routed-admin-new';
@@ -70,6 +76,12 @@ export const routes: Routes = [
   { path: 'blog/new', component: RoutedAdminNew },
   { path: 'blog/edit/:id', component: RoutedAdminEdit },
   { path: 'blog/remove/:id', component: RoutedAdminRemove },
+  { path: 'pallas/plist', component: PallasPlist },
+  { path: 'pallas/new', component: PallasNew },
+  { path: 'pallas/view/:id', component: PallasView },
+  { path: 'pallas/edit/:id', component: PallasUpdate },
+  { path: 'pallas/remove/:id', component: PallasRemove },
+  { path: 'pallas', component: PallasHome },
   { path: 'alfonso', component: RoutedAlfonsoUserPlist },
   { path: 'alfonso/respuesta/:id', component: RoutedAlfonsoUserView },
   { path: 'alfonso/plist', component: RoutedAlfonsoAdminPlist },
