@@ -118,7 +118,7 @@ export const routes: Routes = [
   { path: 'garcia/view/:id', component: RoutedAdminViewGarcia },
   { path: 'garcia/new', component: RoutedAdminNewGarcia },
   { path: 'garcia/edit/:id', component: RoutedAdminEditGarcia },
-  { path: 'garcia/remove/:id', component: RoutedAdminRemoveGarcia }
+  { path: 'garcia/remove/:id', component: RoutedAdminRemoveGarcia },
 
   { path: 'castanyera', component: CastanyeraRoutedUserPlist },
   { path: 'castanyera/post/:id', component: CastanyeraRoutedUserView },
